@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta content="text/html" http-equiv="content-type" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="import/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="import/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="import/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <script type="javascript" src="import/less.js-2.7.2/dist/less.js"></script>
+    <script src="import/jquery.min.js"></script>
+    <script src="import/dist/js/bootstrap.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div id="page">
+        <div id="content">
+            <div class="bgimg" >
+                <div id="login">
+                    <!--<div id="logincontent">-->
+                        <!--<div class="title">-->
+                            <!--<p>LOGIN</p>-->
+                        <!--</div>-->
+                        <!--<div class="username">-->
+                            <!--<input type="text" value="username">-->
+                        <!--</div>-->
+                        <!--<div class="password">-->
+                            <!--<input type="text" value="">-->
+                        <!--</div>-->
+                        <!--<div class="signsubmit">-->
+                            <!--<button type="submit">-->
+                                <!--sign-->
+                            <!--</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <form class="loginForm" id="login-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                <input class="inputLogin" id="username" type="text" v-model="userName" placeholder="用户名"
+                                       autofocus
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                                <input class="inputLogin" type="password" id="password" v-model="password" placeholder="密码"
+                                       required/>
+                            </div>
+                        </div>
+                        <button type="submit" id="btn-login" v-disabled="submitting" class="btn btn-default btn-block"
+                                click="login">登 录</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
